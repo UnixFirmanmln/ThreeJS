@@ -28,7 +28,7 @@ let cam = new THREE.PerspectiveCamera(45, innerWidth/innerHeight, 1, 100);
      - seberapa jauh yg bisa dilihat oleh camera
 */
 
-let renderer = new THREE.WebGLRenderer();
+let renderer = new THREE.WebGLRenderer({antialias: true});
 
 //---------------------- window set ---------------------------
 
@@ -71,7 +71,6 @@ function draw() {
     boxMesh.position.x = -2;
 
 }
-
 
 function draw2() {
     requestAnimationFrame(draw2); //requestAnimationFrame() = fungsi dlm js for looping
